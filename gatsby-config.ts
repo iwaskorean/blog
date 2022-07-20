@@ -1,4 +1,6 @@
-module.exports = {
+import type { GatsbyConfig } from 'gatsby';
+
+const config: GatsbyConfig = {
   siteMetadata: {
     title: `Sewook's Blog`,
     description: `Blog posted about frontend development.`,
@@ -6,6 +8,7 @@ module.exports = {
     siteUrl: `https://github.com/iwaskorean`,
   },
   plugins: [
+    `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-typescript`,
       options: {
@@ -27,3 +30,5 @@ module.exports = {
     `gatsby-plugin-sharp`,
   ],
 };
+
+export default config;
