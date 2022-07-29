@@ -1,4 +1,4 @@
-import type { GatsbyConfig } from 'gatsby';
+import { GatsbyConfig } from 'gatsby';
 
 const config: GatsbyConfig = {
   siteMetadata: {
@@ -8,7 +8,11 @@ const config: GatsbyConfig = {
     siteUrl: `https://github.com/iwaskorean`,
   },
   plugins: [
+    `gatsby-plugin-image`,
     `gatsby-plugin-emotion`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typescript`,
       options: {
@@ -17,8 +21,6 @@ const config: GatsbyConfig = {
         allExtensions: true,
       },
     },
-    `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -26,8 +28,6 @@ const config: GatsbyConfig = {
         path: `${__dirname}/contents`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
   ],
 };
 

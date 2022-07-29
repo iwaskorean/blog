@@ -8,6 +8,7 @@ export function onCreateWebpackConfig({ actions }: CreateWebpackConfigArgs) {
         '@components': resolve(__dirname, 'src/components'),
         '@utils': resolve(__dirname, 'src/utils'),
         '@hooks': resolve(__dirname, 'src/hooks'),
+        '@layout': resolve(__dirname, 'src/layout'),
       },
     },
   });

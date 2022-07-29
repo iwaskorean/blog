@@ -11,7 +11,8 @@
     "paths": {
       "@components/*": ["./components/*"],
       "@utils/*": ["./utils/*"],
-      "@hooks/*": ["./hooks/*"]
+      "@hooks/*": ["./hooks/*"],
+      "@layout/*": ["./layout/*"]
     }
   },
   "include": ["./src/**/*.tsx", "gatsby-node.ts", "./gatsby-config.ts", "./plugins/**/*"],

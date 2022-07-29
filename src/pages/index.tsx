@@ -1,9 +1,5 @@
-import Test from '@components/test';
+import Layout from '@layout/index';
 
 export default function Home() {
-  return (
-    <div>
-      <Test />
-    </div>
-  );
+  return <Layout />;
 }
